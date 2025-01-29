@@ -1,0 +1,23 @@
+import axios from 'axios';
+
+// Export base url from env variable
+const baseURL = window.BACKEND_URL;
+
+// Get csrf token
+const getCSRFToken = () => {
+    const csrfToken = document.cookie.match(/csrftoken=([\w-]+)/);
+    return csrfToken ? csrfToken[1] : null;
+};
+
+// Axios instance
+const axiosInstance = axios.create({
+    baseURL: baseURL,
+    timeout: 5000,
+    headers: {
+        'X-CSRFToken': getCSRFToken(),
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+    },
+});
+
+export default axiosInstance;

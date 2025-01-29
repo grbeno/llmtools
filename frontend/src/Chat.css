@@ -1,0 +1,96 @@
+/* src/AI/Chat.css */
+
+/* elements */
+
+input {
+    width: 30%;
+    height: 70px;
+    padding: 0.5em;
+    border: none;
+    font-size: 1em;
+}
+
+.chat-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 31%;
+    padding: 0.5em;
+    margin-top: 2.0em;
+    background-color: rgba(29, 60, 107, 0.5);
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* classes */
+
+.chat-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    margin: 0.7em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+.chat-prompt {
+    display: block;
+    padding: 0.7em;
+    margin: 0.5em;
+    color: white;
+    background-color: rgb(52 142 59 / 70%);
+}
+
+.chat-response {
+    display: block;
+    padding: 0.7em;
+    margin: 0.5em;
+    background-color: rgb(255 255 255 / 50%);
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.status {
+    margin: 0.6em;
+    font-size: 1.3em;
+}
+
+.connected {
+    color: rgb(9, 11, 139);
+}
+
+.disconnected {
+    color: rgb(224, 13, 41);
+}
+
+@media screen and (max-width: 768px) {
+    .messages {
+        width: 80%;
+    }
+
+    .status {
+        width: 80%;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    button {
+        width: 50%;
+    }
+    
+}

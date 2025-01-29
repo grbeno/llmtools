@@ -1,0 +1,68 @@
+  
+h1 {
+color: #d1a266;
+}
+
+.loading {
+color: #d1a266;
+}
+
+textarea[type="text"] {
+width: 600px;
+height: 150px;
+font-size: 16px;
+text-align: left;
+vertical-align: top;
+border-radius: 8px;
+}
+
+button {
+display: block;
+margin: 0 auto;
+margin-top: 10px;
+width: 605px;
+background-color: #fdd95d;
+color: black;
+padding: 10px 16px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #45a049;
+}
+
+.delete {
+
+background-color: #cd4a33;
+
+}
+
+.delete:hover {
+background-color: #d21f0a;
+}
+
+.prompt,
+.correction,
+.translation {
+justify-content: center;
+display: flex;
+width: 590px;
+padding: 8px 12px;
+margin: 8px auto;
+border-radius: 8px;
+}
+
+.prompt {
+background-color: #add4e5;
+}
+
+.correction {
+background-color: #fff7b3;
+}
+
+.translation {
+background-color: #add4e5;
+margin-bottom: 32px;
+}
