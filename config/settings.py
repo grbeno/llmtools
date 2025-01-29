@@ -30,7 +30,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ['127.0.0.0.1', 'localhost', 'llmtools1.up.railway.app']
+ALLOWED_HOSTS = ['127.0.0.0.1', 'localhost', 'llmtools.up.railway.app']
 
 
 # Application definition
@@ -170,6 +170,6 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost:5173',
     'http://localhost:8000',
-    'https://llmtools1.up.railway.app',
+    'https://llmtools.up.railway.app',
 ]
 
