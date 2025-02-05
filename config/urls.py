@@ -6,7 +6,7 @@ from chat.views import ChatConsumer
 from react.views import IndexView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('mbggz1/', admin.site.urls),
 
     # Lang
     path("api/", include("lang.urls")),
@@ -15,6 +15,6 @@ urlpatterns = [
     path('ws/chat/', ChatConsumer.as_asgi()),
 
     # React
-    re_path(r'^.*$', IndexView.as_view()),
+    re_path(r'^.*$', IndexView.as_view(), name='index'),
     
 ]

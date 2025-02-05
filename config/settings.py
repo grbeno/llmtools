@@ -173,3 +173,6 @@ CORS_ALLOWED_ORIGINS = [
     'https://llmtools.up.railway.app',
 ]
 
+# CSRF
+CSRF_TRUSTED_ORIGINS = [ 'https://llmtools.up.railway.app' ]
+

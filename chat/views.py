@@ -3,11 +3,6 @@ from django.views.generic import TemplateView
 from channels.generic.websocket import AsyncWebsocketConsumer
 from .chat_api import AiChat
 
-
-# React home page
-class React(TemplateView):
-    template_name = 'index.html'
-
 # Chat Consumer
 class ChatConsumer(AsyncWebsocketConsumer):
 
