@@ -7,6 +7,7 @@ from react.views import IndexView
 
 urlpatterns = [
     path('mbggz1/', admin.site.urls),
+    path("accounts/", include("django.contrib.auth.urls")),
 
     # Lang
     path("api/", include("lang.urls")),

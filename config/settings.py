@@ -68,7 +68,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [str(BASE_DIR.joinpath('static')),],
+        'DIRS': [str(BASE_DIR.joinpath('static')), str(BASE_DIR.joinpath('templates')),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -176,3 +176,5 @@ CORS_ALLOWED_ORIGINS = [
 # CSRF
 CSRF_TRUSTED_ORIGINS = [ 'https://llmtools.up.railway.app' ]
 
+
+LOGIN_REDIRECT_URL = "/"

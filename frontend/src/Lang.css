@@ -66,3 +66,20 @@ background-color: #fff7b3;
 background-color: #add4e5;
 margin-bottom: 32px;
 }
+
+@media screen and (max-width: 768px) {
+
+    .prompt,
+    .correction,
+    .translation {
+        width: 90%;
+    }
+
+    textarea[type="text"] {
+        width: 90%;
+    }
+    button {
+        width: 90%;
+    }
+
+}
