@@ -14,8 +14,7 @@ class Assistant:
         self.request = request
         self.prompt = request.data['prompt']
         self.model = 'gpt-4o-mini'
-        self.role = """Your response should be the correction of the given prompt. 
-        If the prompt is already correct, respond with 'Your english is correct'."""
+        self.role = """Your response should be the correction of the given prompt. If the prompt is already correct, respond with 'Your english is correct'. If the prompt is a question, don't answer it, instead, correct the question if needed."""
         self.key = env.str("OPENAI_API_KEY")
 
 
